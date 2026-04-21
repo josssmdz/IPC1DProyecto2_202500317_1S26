@@ -1,7 +1,7 @@
 
 package gamezonepro;
 
-public class GameZonePro {
+public class Main {
 
  
     public static void main(String[] args) {
