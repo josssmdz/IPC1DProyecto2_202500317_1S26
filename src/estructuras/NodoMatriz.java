@@ -2,7 +2,7 @@ package estructuras;
 
 import modelos.Carta;
 
-//Nodo de la malla ortogonal del álbum de cartas. Cada nodo tiene 4 referencias arriba, abajo, izquierda, derecha.
+//Nodo de la malla ortogonal del álbum de cartas. Cada nodo tiene 4 referencias arriba, abajo, izquierda, derecha
 
 public class NodoMatriz {
 

@@ -2,7 +2,7 @@ package estructuras;
 
 import modelos.Carta;
 
-//Malla ortogonal de nodos doblemente enlazados. Representa el álbum de cartas coleccionables.
+//Malla ortogonal de nodos doblemente enlazados. Representa el álbum de cartas coleccionables
  
 public class MallaOrtogonal {
 
