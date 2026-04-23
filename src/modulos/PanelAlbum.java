@@ -61,7 +61,7 @@ public class PanelAlbum extends JPanel {
         txtBuscar.setForeground(COLOR_TEXTO);
         txtBuscar.setCaretColor(COLOR_TEXTO);
 
-        lblNombre = crearLabel("Seleccioná una carta");
+        lblNombre = crearLabel("Selecciona una carta");
         lblTipo = crearLabel("");
         lblRareza = crearLabel("");
         lblAtaque = crearLabel("");
@@ -74,7 +74,6 @@ public class PanelAlbum extends JPanel {
     }
 
     private void agregarComponentes() {
-        // ---- HEADER ----
         JPanel header = new JPanel(new BorderLayout());
         header.setBackground(new Color(13, 71, 161));
         header.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
@@ -248,14 +247,14 @@ public class PanelAlbum extends JPanel {
 
         if (nodo.getDato() != null) {
             Carta c = nodo.getDato();
-            lblNombre.setText("📛 " + c.getNombre());
+            lblNombre.setText(c.getNombre());
             lblTipo.setText("Tipo: " + c.getTipo());
             lblRareza.setText("Rareza: " + c.getRareza());
             lblAtaque.setText("ATQ: " + c.getAtaque());
             lblDefensa.setText("DEF: " + c.getDefensa());
             lblPs.setText("PS: " + c.getPs());
         } else {
-            lblNombre.setText("Celda vacía");
+            lblNombre.setText("Celda vacia");
             lblTipo.setText("");
             lblRareza.setText("");
             lblAtaque.setText("");
@@ -269,8 +268,8 @@ public class PanelAlbum extends JPanel {
             case "Fuego":     return new Color(183, 28, 28);
             case "Agua":      return new Color(13, 71, 161);
             case "Planta":    return new Color(27, 94, 32);
-            case "Eléctrico": return new Color(245, 127, 23);
-            case "Psíquico":  return new Color(136, 14, 79);
+            case "Electrico": return new Color(245, 127, 23);
+            case "Psiquico":  return new Color(136, 14, 79);
             case "Oscuro":    return new Color(38, 50, 56);
             case "Acero":     return new Color(69, 90, 100);
             default:          return new Color(55, 71, 79);
@@ -291,7 +290,7 @@ public class PanelAlbum extends JPanel {
         panelForm.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         JTextField[] campos = new JTextField[7];
-        String[] etiquetas = {"Código:", "Nombre:", "Tipo:", "Rareza:",
+        String[] etiquetas = {"Codigo:", "Nombre:", "Tipo:", "Rareza:",
                               "Ataque:", "Defensa:", "PS:"};
 
         for (int i = 0; i < etiquetas.length; i++) {
@@ -355,15 +354,15 @@ public class PanelAlbum extends JPanel {
                     JOptionPane.showMessageDialog(this,
                         "Carta agregada" +
                         (xp > 0 ? " — +" + xp + " XP" : ""),
-                        "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                        "Exito", JOptionPane.INFORMATION_MESSAGE);
                 } else {
                     JOptionPane.showMessageDialog(dialogo,
-                        "El álbum está lleno",
+                        "El album esta lleno",
                         "Error", JOptionPane.ERROR_MESSAGE);
                 }
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(dialogo,
-                    "Ataque, Defensa y PS deben ser números enteros",
+                    "Ataque, Defensa y PS deben ser numeros enteros",
                     "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
@@ -376,13 +375,13 @@ public class PanelAlbum extends JPanel {
     private void intercambiarCartas() {
         if (filaSeleccionada < 0) {
             JOptionPane.showMessageDialog(this,
-                "Primero seleccioná la primera celda",
+                "Primero selecciona la primera celda",
                 "Aviso", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
         String input = JOptionPane.showInputDialog(this,
-            "Ingresá la posición de la segunda celda (fila,columna)\n" +
+            "Ingresa la posicion de la segunda celda (fila,columna)\n" +
             "Ejemplo: 1,3");
         if (input == null || input.trim().isEmpty()) return;
 
@@ -393,7 +392,7 @@ public class PanelAlbum extends JPanel {
 
             if (f2 < 0 || f2 >= FILAS || c2 < 0 || c2 >= COLUMNAS) {
                 JOptionPane.showMessageDialog(this,
-                    "Posición fuera del rango del álbum",
+                    "Posicion fuera del rango del album",
                     "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
@@ -402,7 +401,7 @@ public class PanelAlbum extends JPanel {
             renderizarMalla();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this,
-                "Formato inválido. Usá fila,columna (ej: 1,3)",
+                "Formato invalido. Usa fila,columna (ej: 1,3)",
                 "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -472,7 +471,7 @@ public class PanelAlbum extends JPanel {
             sc.close();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this,
-                "Error al cargar álbum: " + ex.getMessage(),
+                "Error al cargar album: " + ex.getMessage(),
                 "Error", JOptionPane.ERROR_MESSAGE);
         }
         renderizarMalla();
@@ -513,4 +512,9 @@ public class PanelAlbum extends JPanel {
         btn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 36));
         return btn;
     }
+    
+    public MallaOrtogonal getMalla() {
+    return malla;
+    }
+
 }

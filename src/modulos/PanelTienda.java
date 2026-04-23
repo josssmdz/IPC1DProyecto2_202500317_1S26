@@ -62,7 +62,7 @@ public class PanelTienda extends JPanel {
         txtBuscar.setForeground(COLOR_TEXTO);
         txtBuscar.setCaretColor(COLOR_TEXTO);
 
-        String[] generos = {"Todos", "Acción", "RPG", "Estrategia",
+        String[] generos = {"Todos", "Accion", "RPG", "Estrategia",
                             "Deportes", "Terror", "Aventura"};
         String[] plataformas = {"Todas", "PC", "PlayStation",
                                 "Xbox", "Nintendo Switch"};
@@ -420,7 +420,7 @@ public class PanelTienda extends JPanel {
         int fila = tablaCarrito.getSelectedRow();
         if (fila < 0) {
             JOptionPane.showMessageDialog(this,
-                "Seleccioná un item para eliminar",
+                "Selecciona un item para eliminar",
                 "Aviso", JOptionPane.WARNING_MESSAGE);
             return;
         }
@@ -433,7 +433,7 @@ public class PanelTienda extends JPanel {
     private void confirmarCompra() {
         if (carrito.estaVacia()) {
             JOptionPane.showMessageDialog(this,
-                "El carrito está vacío",
+                "El carrito esta vacío",
                 "Aviso", JOptionPane.WARNING_MESSAGE);
             return;
         }
@@ -550,4 +550,13 @@ public class PanelTienda extends JPanel {
             ex.printStackTrace();
         }
     }
+    
+    public ListaSimple getCatalogo() {
+    return catalogo;
+    }
+
+    public ListaSimple getHistorial() {
+    return historial;
+    }
+
 }

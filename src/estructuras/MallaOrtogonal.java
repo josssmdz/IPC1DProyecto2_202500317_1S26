@@ -27,8 +27,8 @@ public class MallaOrtogonal {
             for (int j = 0; j < columnas; j++) {
                 if (i > 0) temp[i][j].setArriba(temp[i-1][j]);
                 if (i < filas - 1) temp[i][j].setAbajo(temp[i+1][j]);
-                if (j > 0) temp[i][j].setIzquierda(temp[i-1][j]);
-                if (j < columnas - 1) temp[i][j].setDerecha(temp[i+1][j]);
+                if (j > 0) temp[i][j].setIzquierda(temp[i][j-1]);
+                if (j < columnas - 1) temp[i][j].setDerecha(temp[i][j+1]);
             }
         }
 

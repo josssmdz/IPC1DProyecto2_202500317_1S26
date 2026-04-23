@@ -2,6 +2,9 @@ package modelos;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import estructuras.ListaSimple;
+import estructuras.NodoSimple;
+
 
  //Representa una compra confirmada en la tienda.
  

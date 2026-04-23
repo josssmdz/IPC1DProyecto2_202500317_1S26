@@ -47,6 +47,7 @@ public class PanelTorneos extends JPanel {
         agregarComponentes();
         agregarEventos();
         cargarTorneos();
+        cargarTickets();
     }
 
     private void inicializarComponentes() {
@@ -405,4 +406,13 @@ public class PanelTorneos extends JPanel {
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         return btn;
     }
+    
+    public ListaSimple getTorneos() {
+    return torneos;
+    }
+    
+    public ListaSimple getTicketsVendidos() {
+    return ticketsVendidos;
+    }
+
 }

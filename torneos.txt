@@ -1,0 +1,3 @@
+T001|Copa Zelda|Zelda: TotK|28/04/2026|14:00|50.0|9
+T002|Torneo God of War|God of War|29/04/2026|16:00|75.0|8
+T003|Liga Elden Ring|Elden Ring|30/04/2026|18:00|100.0|6

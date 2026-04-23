@@ -57,7 +57,6 @@ public class PanelReportes extends JPanel {
         lblDesc.setFont(new Font("Arial", Font.PLAIN, 16));
         lblDesc.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        // Botones de reportes
         JButton btnInventario = crearBtnReporte(
             "Reporte de Inventario",
             "Lista todos los juegos con stock y precios",

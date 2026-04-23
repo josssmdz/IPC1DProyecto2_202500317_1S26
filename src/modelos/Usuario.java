@@ -1,5 +1,9 @@
 package modelos;
 
+import estructuras.ListaSimple;
+import estructuras.NodoSimple;
+
+
  //Representa el usuario actual de la plataforma GameZone Pro.
  
 public class Usuario {
