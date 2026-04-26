@@ -61,7 +61,7 @@ public class PanelAlbum extends JPanel {
         txtBuscar.setForeground(COLOR_TEXTO);
         txtBuscar.setCaretColor(COLOR_TEXTO);
 
-        lblNombre = crearLabel("Seleccioná una carta");
+        lblNombre = crearLabel("Selecciona una carta");
         lblTipo = crearLabel("");
         lblRareza = crearLabel("");
         lblAtaque = crearLabel("");
@@ -403,7 +403,7 @@ public class PanelAlbum extends JPanel {
             renderizarMalla();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this,
-                "Formato inválido. Usá fila,columna con numeración desde 1 (ej: 1,3)",
+                "Formato inválido. Usa fila,columna con numeración desde 1 (ej: 1,3)",
                 "Error", JOptionPane.ERROR_MESSAGE);
         }
     }

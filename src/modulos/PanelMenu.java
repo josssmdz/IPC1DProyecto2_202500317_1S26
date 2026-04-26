@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
- //Panel del menú principal de GameZone Pro.
+ //Panel del menú principal de GameZone Pro
  
 public class PanelMenu extends JPanel {
 

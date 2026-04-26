@@ -1,6 +1,0 @@
-J001|Zelda: Tears of the Kingdom|Aventura|350.0|Nintendo Switch|8|Explora Hyrule en una nueva aventura épica
-J002|God of War Ragnarok|Acción|420.0|PlayStation|6|La batalla épica de Kratos continúa
-J003|Elden Ring|RPG|380.0|PC|13|Un mundo abierto lleno de desafíos
-J004|FIFA 25|Deportes|300.0|PlayStation|19|El fútbol más realista de la saga
-J005|Halo Infinite|Acción|290.0|Xbox|10|El regreso del Jefe Maestro
-J006|Resident Evil 4|Terror|310.0|PC|6|El remake del clásico survival horror
