@@ -62,11 +62,11 @@ public class PanelEstudiante extends JPanel {
         panelInfo.add(Box.createVerticalStrut(8));
         panelInfo.add(crearLabel("Carné: 202500317"));
         panelInfo.add(Box.createVerticalStrut(8));
-        panelInfo.add(crearLabel("Correo: josselyn.mendoza@usac.edu.gt"));
+        panelInfo.add(crearLabel("Correo: 2004348880101@usac.edu.gt"));
         panelInfo.add(Box.createVerticalStrut(8));
-        panelInfo.add(crearLabel("Sección: A"));
+        panelInfo.add(crearLabel("Sección: D"));
         panelInfo.add(Box.createVerticalStrut(8));
-        panelInfo.add(crearLabel("Semestre y año: 1S 2026"));
+        panelInfo.add(crearLabel("Semestre y año: 3S 2026"));
         panelInfo.add(Box.createVerticalStrut(20));
         panelInfo.add(crearLabelTitulo("Acerca de GameZone Pro"));
         panelInfo.add(Box.createVerticalStrut(15));

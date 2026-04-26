@@ -171,7 +171,7 @@ public class PanelTorneos extends JPanel {
         btnVolver.addActionListener(e -> {
             if (ventaActiva) {
                 JOptionPane.showMessageDialog(this,
-                    "Hay una venta en proceso, esperá que finalice",
+                    "Hay una venta en proceso, espera que finalice",
                     "Aviso", JOptionPane.WARNING_MESSAGE);
                 return;
             }
@@ -239,7 +239,7 @@ public class PanelTorneos extends JPanel {
         int fila = tablaTorneos.getSelectedRow();
         if (fila < 0) {
             JOptionPane.showMessageDialog(this,
-                "Seleccioná un torneo primero",
+                "Selecciona un torneo primero",
                 "Aviso", JOptionPane.WARNING_MESSAGE);
             return;
         }
@@ -255,7 +255,7 @@ public class PanelTorneos extends JPanel {
         }
 
         String nombre = JOptionPane.showInputDialog(this,
-            "Ingresá tu nombre para inscribirte:",
+            "Ingresa tu nombre para inscribirte:",
             "Inscripción", JOptionPane.PLAIN_MESSAGE);
 
         if (nombre == null || nombre.trim().isEmpty()) return;
